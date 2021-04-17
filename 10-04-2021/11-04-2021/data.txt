@@ -1,0 +1,3 @@
+Length:  98; Size in bytes:  920
+Length:  99; Size in bytes:  920
+Beaglewe are for the collection of the information oavd hd 23293Sometimes, you may want to append to a file or start writing at the end of an already populated file. This is easily done by using the 'a' character for the mode argument:32ffffffffffffffffffffffffffffffffffffffffffffffffffffff
