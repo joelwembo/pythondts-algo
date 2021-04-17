@@ -5,7 +5,7 @@ graph =     {'A': ['B', 'C'],
              'B': ['C', 'D'],
              'C': ['D'],
              'D': ['C'],
-             'E': ['F'],
+             'E': ['C'],
              'F': ['C']}
 
 
@@ -22,6 +22,6 @@ def find_path(graph, start, end, path=[]):
         return None
 
 
-print(find_path(graph, 'A', 'D'))
+print(find_path(graph, 'A', 'C'))
 
 
