@@ -1,0 +1,50 @@
+<html>
+<head>
+
+
+</head>
+
+
+<body>
+
+    <div>
+        <h1>Data to be added</h1>
+        <h1 id='add-text'></h1>
+        <div id="content"></div>
+    </div>
+
+
+</body>
+
+<script>
+    let obj = {
+    isLoading: false,
+    load: function () {
+    if (this.isLoading) {
+        return null;
+    } 
+    let request = new XMLHttpRequest();
+    let response = "loading...";
+    request.addEventListener("load", function (ev) {
+        response = ev.target.response;
+        this.isLoading = false;
+        console.log('event log', response); //logs "Random Words API" as expected
+        document.getElementById("content").append(response);
+        // or you can keep add-text id  document.getElementById("add-text").append(response);
+    });
+    request.open("GET", "https://random-words-api.vercel.app/");
+    request.send();
+    return response
+  }
+};
+ setInterval(function () {
+  let response = obj.load();
+  console.log('line 25', response)//logs loading... then null every time after first
+  document.getElementById("add-text").innerText = response;
+}, 4000);
+
+</script>
+
+
+
+</html>
