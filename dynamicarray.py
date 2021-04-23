@@ -1,5 +1,5 @@
 #Dynamic Array Logic Implementation using python
-
+# Author: Joel O Wembo
 import ctypes
   
 class DynamicArray(object):
