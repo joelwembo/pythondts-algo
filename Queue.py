@@ -1,4 +1,5 @@
 # Implementatin of the Queue ADT using a python list
+#Author : Joel Otepa Wembo
 
 class Queue:
     # Creates en empty queue
