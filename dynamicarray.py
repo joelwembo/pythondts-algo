@@ -8,7 +8,7 @@ class DynamicArray(object):
     '''
       
     def __init__(self):
-        self.n = 0 # Count actual elements (Default is 0)
+        self.n = 0 # Count actual elements (Default == 0)
         self.capacity = 1 # Default Capacity
         self.A = self.make_array(self.capacity)
           
