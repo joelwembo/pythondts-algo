@@ -1,4 +1,5 @@
 #Python Program to demonstrate class
+# Author : Joel Otepa Wembo
 class Employee:
 
     empcount = 0
