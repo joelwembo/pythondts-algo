@@ -1,4 +1,6 @@
 # Python Program to demonstrate Search Algorithms
+# Author : Joel Otepa Wembo
+
 
 def binarySearch(theValues, target) :
     low = 0
@@ -51,8 +53,8 @@ def bubbleSort(theSeq):
 
     return theSeq
 
-mylist = (10, 29, 100,7,89,12,3) 
-myarray = [1, 21, 100,7,69,48,12]
+mylist = (10, 29, 1,7,89,12,4, 3) 
+myarray = [1, 21, 90,7,69,8,12]
 a = 10
 b = 12
 c = 72
