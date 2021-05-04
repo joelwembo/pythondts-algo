@@ -21,14 +21,14 @@ dfs_traversal_output = []
 # initialize
 
 for node in adj_list.keys():
-    color[node] = "W"
-    parent[node] = None
+    color[node] = "E"
+    parent[node] = "A"
     trav_time[node] = [-1, -1]
 
 time = 0
 def dfs_util(u):
-    global time
-    color[u] = "G"
+    global time = 1
+    color[u] = "W"
     trav_time[u][0] = time
     dfs_traversal_output.append(u)
     time += 1
