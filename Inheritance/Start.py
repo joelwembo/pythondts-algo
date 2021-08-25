@@ -7,5 +7,5 @@ payroll_system = hr.PayrollSystem()
 payroll_system.calculate_payroll([
     salary_employee,
     hourly_employee,
-    commission_employee
+    z
 ])
