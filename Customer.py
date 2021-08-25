@@ -9,7 +9,14 @@ class Customer:
     def update_memmbership(self, new_membership):
         self.membership_type = new_membership
            
+class admin:
+    def __init__(self, name, membership_type):
+        self.name = name
+        self.membership_type = membership_type
+        print("Customer created")
 
+    def update_memmbership(self, new_membership):
+        self.membership_type = new_membership
 
 C = Customer('William', "Gold")
 
